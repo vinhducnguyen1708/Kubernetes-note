@@ -3,7 +3,7 @@
 ## What is Ingress?
 Mô hình hệ thống thuẩn túy:
 
-![](..%5Cimages%5Cingress-modelclassic.png)
+![](../images/ingress-modelclassic.png)
 
 Trong mô hình này, chúng ta phải kiểm soát rất nhiều thành phần.
 - Service
@@ -13,7 +13,7 @@ Trong mô hình này, chúng ta phải kiểm soát rất nhiều thành phần.
 Chúng ta không thể tạo từng Object trên với một hệ thống lớn.Vậy làm thế nào để kiểm soát tất cả các thành phần này trong Kubernetes Cluster? -> Ingress ra đời
 
 Ingress sẽ đưa tất cả các thành phần nói trên vào trong một object của Kubernetes và có thể dễ dàng cấu hình như các object khác.
-![](..%5Cimages%5Cingress-model.png)
+![](../images/ingress-model.png)
 
 Ingress giúp cho user truy cập ứng dụng bên trong Kubernetes Cluster thông qua URL duy nhất.
 Và ta có thể tùy chỉnh cấu hình các đường dẫn URL khác nhau đến từng ứng dụng bên trong Kubernetes Cluster. 
@@ -29,7 +29,7 @@ Nhưng khi sử dụng Ingress thì ta vẫn phải expose ra ngoài Kubernetes 
 - Ingress Controller: Là các Pod sử dụng Image NGINX hoặc Hapory và cần route traffic từ pod này đến các service bên dưới trong cụm Kubernetes cluster.
 - Ingress Resources: Để thiết lập các rule sẽ là các template định nghĩa phương thức làm việc cho Ingress (cấu hình route URL, cấu hình SSL certificate,...). (có định dạng giống Pod, Deployment,..)
 
-![](..%5Cimages%5Cingress-tp.png)
+![](../images/ingress-tp.png)
 
 Ingress không tổn tại mặc định trong Kubernetes Cluster.
 
@@ -133,13 +133,13 @@ Là thiết lập rule trên Ingress controller.
 
 - Sample01:
 
-![](..%5Cimages%5Cingress-model01.png)
+![](../images/ingress-model01.png)
 
 
 - Sample02:
 
-![](..%5Cimages%5Cingress-model02.png)
+![](../images/ingress-model02.png)
 
 - Sample03:
 
-![](..%5Cimages%5Cingress-model03.png)
+![](../images/ingress-model03.png)
